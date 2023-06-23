@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+
+  "name": "Speech to Text",
+  "description": "Record an audio sample and this will hopefully write it in a doc",
+  "version": "1.0",
+
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "src/popup.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["src/build/main.js"]
+    }
+  ]
+}
