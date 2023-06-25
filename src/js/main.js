@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Button from './components/Button';
-
+console.log("ON ME")
 class App extends React.Component {
   render() {
     return (
